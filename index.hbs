@@ -1,0 +1,19 @@
+{{!< default}}
+<main class="site-content" role="main">
+	<div class="wrapper">
+		{{#foreach posts}}
+		<article class="{{post_class}}">
+		    <header class="post-header">
+				<span class="post-meta">
+					<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> 
+					<span class="post-tags">{{tags prefix="Tags: "}}</span>
+				</span>
+		        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+		    </header>
+		    <section class="post-excerpt">
+		        <p>{{excerpt}}&hellip;</p>
+		    </section>
+		</article>
+		{{/foreach}}
+	</div>
+</main>
