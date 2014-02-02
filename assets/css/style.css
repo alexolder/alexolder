@@ -182,6 +182,10 @@ body {
           text-decoration: underline; }
     .site-content .post .post-content > * {
       margin-bottom: 20px; }
+    .site-content .post .post-content h2 {
+      font-size: 1.8em; }
+    .site-content .post .post-content h3 {
+      font-size: 1.4em; }
     .site-content .post .post-content ul {
       margin-left: 15px; }
     .site-content .post .post-content ol {
@@ -189,10 +193,19 @@ body {
     .site-content .post .post-content code {
       display: block;
       padding: 10px;
-      border: 1px solid #515151;
+      border: 1px solid #97bb90;
       margin: 20px 0;
-      background-color: #f9f9f8;
-      color: #e25454; }
+      background-color: white;
+      color: #97bb90; }
+    .site-content .post .post-content hr {
+      border-top-color: #97bb90; }
+    .site-content .post .post-content input {
+      border: 1px solid #97bb90;
+      padding: 5px;
+      font-size: 1.2em; }
+    .site-content .post .post-content p code {
+      display: inline-block;
+      padding: 0px 5px; }
 
 .main-foot {
   clear: both;
