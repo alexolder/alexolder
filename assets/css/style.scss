@@ -167,7 +167,6 @@ body{
 
 	.footer-info{
 		list-style: none;
-		font-weight: bold;
 
 		li{
 			float: left;
@@ -183,6 +182,7 @@ body{
 			a{
 				color: $dgrey;
 				text-decoration: none;
+				font-weight: bold;
 
 				&:focus, &:hover{
 					text-decoration: underline;

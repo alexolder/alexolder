@@ -175,8 +175,7 @@ body {
   padding: 10px 0;
   color: #515151; }
   .main-foot .footer-info {
-    list-style: none;
-    font-weight: bold; }
+    list-style: none; }
     .main-foot .footer-info li {
       float: left;
       display: block;
@@ -187,6 +186,7 @@ body {
         padding-left: 0; }
       .main-foot .footer-info li a {
         color: #515151;
-        text-decoration: none; }
+        text-decoration: none;
+        font-weight: bold; }
         .main-foot .footer-info li a:focus, .main-foot .footer-info li a:hover {
           text-decoration: underline; }
