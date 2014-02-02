@@ -171,7 +171,7 @@ body {
         color: #515151; }
         .site-content .post .post-title a:hover, .site-content .post .post-title a:focus {
           text-decoration: underline; }
-    .site-content .post .post-excerpt {
+    .site-content .post .post-excerpt, .site-content .post .post-content {
       font-size: 1.6em;
       line-height: 1.5em;
       color: #515151; }
