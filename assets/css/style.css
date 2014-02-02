@@ -175,6 +175,24 @@ body {
       font-size: 1.6em;
       line-height: 1.5em;
       color: #515151; }
+      .site-content .post .post-excerpt a, .site-content .post .post-content a {
+        color: #75aaa7;
+        text-decoration: none; }
+        .site-content .post .post-excerpt a:hover, .site-content .post .post-excerpt a:focus, .site-content .post .post-content a:hover, .site-content .post .post-content a:focus {
+          text-decoration: underline; }
+    .site-content .post .post-content > * {
+      margin-bottom: 20px; }
+    .site-content .post .post-content ul {
+      margin-left: 15px; }
+    .site-content .post .post-content ol {
+      margin-left: 20px; }
+    .site-content .post .post-content code {
+      display: block;
+      padding: 10px;
+      border: 1px solid #515151;
+      margin: 20px 0;
+      background-color: #f9f9f8;
+      color: #e25454; }
 
 .main-foot {
   clear: both;

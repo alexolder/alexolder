@@ -157,10 +157,39 @@ body{
 			font-size: 1.6em;
 			line-height: 1.5em;
 			color: $dgrey;
+
+			a{
+				color: $blue;
+				text-decoration: none;
+
+				&:hover, &:focus{
+					text-decoration: underline;
+				}
+			}
 		}
 
 		.post-content{
 
+			& > *{
+				margin-bottom: 20px;
+			}
+
+			ul{
+				margin-left: 15px;
+			}
+
+			ol{
+				margin-left: 20px;
+			}
+
+			code{
+				display: block;
+				padding: 10px;
+				border: 1px solid $dgrey;
+				margin: 20px 0;
+				background-color: lighten($grey, 20%);
+				color: $red;
+			}
 		}
 	}
 }
