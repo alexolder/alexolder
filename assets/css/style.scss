@@ -89,24 +89,29 @@ body{
 		overflow: visible;
 	}
 
-	.banner{
-		position: relative;
+	.home-link{
+		text-decoration: none;
+		color: $dgrey;
 
-		@media screen and (min-width: 960px){
-			top: -5px;
-			left: -2px;
-			float: left;
+		.banner{
+			position: relative;
+
+			@media screen and (min-width: 960px){
+				top: -5px;
+				left: -2px;
+				float: left;
+			}
 		}
-	}
 
-	.site-title{
-		float: left;
-		font-weight: normal;
-		font-size: 5.6em;
-		line-height: 1em;
-		margin: 24px 0 0 6px;
-		@include raleway;
+		.site-title{
+			float: left;
+			font-weight: normal;
+			font-size: 5.6em;
+			line-height: 1em;
+			margin: 24px 0 0 6px;
+			@include raleway;
 
+		}
 	}
 }
 

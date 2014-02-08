@@ -127,20 +127,23 @@ body {
       height: 115px; } }
   .main-head .wrapper {
     overflow: visible; }
-  .main-head .banner {
-    position: relative; }
-    @media screen and (min-width: 960px) {
-      .main-head .banner {
-        top: -5px;
-        left: -2px;
-        float: left; } }
-  .main-head .site-title {
-    float: left;
-    font-weight: normal;
-    font-size: 5.6em;
-    line-height: 1em;
-    margin: 24px 0 0 6px;
-    font-family: 'Raleway', sans-serif; }
+  .main-head .home-link {
+    text-decoration: none;
+    color: #515151; }
+    .main-head .home-link .banner {
+      position: relative; }
+      @media screen and (min-width: 960px) {
+        .main-head .home-link .banner {
+          top: -5px;
+          left: -2px;
+          float: left; } }
+    .main-head .home-link .site-title {
+      float: left;
+      font-weight: normal;
+      font-size: 5.6em;
+      line-height: 1em;
+      margin: 24px 0 0 6px;
+      font-family: 'Raleway', sans-serif; }
 
 .site-content {
   clear: both;
