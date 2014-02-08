@@ -189,7 +189,7 @@ body {
     .site-content .post .post-content h3 {
       font-size: 1.4em; }
     .site-content .post .post-content ul {
-      margin-left: 15px; }
+      margin-left: 16px; }
     .site-content .post .post-content ol {
       margin-left: 20px; }
     .site-content .post .post-content code {
@@ -203,7 +203,7 @@ body {
     .site-content .post .post-content hr {
       border-top-color: #97bb90; }
     .site-content .post .post-content input {
-      border: 1px solid #97bb90;
+      border: 1px solid #75aaa7;
       padding: 5px;
       font-size: 1.2em; }
     .site-content .post .post-content p code {
