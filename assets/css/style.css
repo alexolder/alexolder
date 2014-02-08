@@ -148,7 +148,8 @@ body {
   .site-content .post {
     background-color: #f9f7f2;
     padding: 10px;
-    border-top: 5px solid #75aaa7; }
+    border-top: 5px solid #75aaa7;
+    margin-bottom: 20px; }
     .site-content .post .post-meta {
       border-bottom: 1px solid #cacdbe;
       overflow: auto;
