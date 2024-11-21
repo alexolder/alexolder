@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Frontend Developer based in Bristol, UK">
+	<header class="home-header">
+		<div class="container">
+			<img src="/images/logo.svg" alt="Troy Illustration" width="250" class="home-header__troy">
+			<div class="home-header__text">
+				<h1>Hi there! I'm Alex (that's Troy).</h1>
+				<p>I'm a Front-end developer and founder of both <a href="https://bluefly.digital">Bluefly Digital</a> and <a href="https://webdevconf.com">WDC</a>.</p>
+				<p>My focus is on producing amazing websites and applications that are performative and responsive regardless of device or browser.</p>
+				<p>This is my little corner of the internet where I <a href="/blog">write</a> (very occasionally) and tell you how to find me out on the world wide web.</p>
+			</div>
+		</div>
+	</header>
+	<article class="home-what-i-do">
+		<div class="container">
+			<div class="home-what-i-do__text">
+				<h2>Front-end developer, Event Organiser, Company Founder</h2>
+				<p>For over 15 years I've wondered the halls of the internet providing my skills and expertise in front-end web development for a huge list of clients. Some you may have heard of.</p>
+				<p>During this time I have worked with organisations large and small across the UK to produce websites and applications that can stand the test of time is this fast paced world.</p>
+			</div>
+			<ul class="home-what-i-do__clients">
+				<li>
+					<img src="/images/EE_logo.svg" alt="EE Logo">
+				</li>
+				<li>
+					<img src="/images/Victoria_and_Albert_Museum_Logo.svg" alt="Victoria and Albert Museum Logo">
+				</li>
+				<li>
+					<img src="/images/english-heritage-vector-logo.svg" alt="English Heritage Logo">
+				</li>
+				<li></li>
+				<li>
+					<img src="/images/zeroheight.svg" alt="zeroheight Logo">
+				</li>
+				<li>
+					<img src="/images/Hotels.com_Logo_2023.svg" alt="Hotels.com Logo">
+				</li>
+			</ul>
+		</div>
+	</article>
+	<!-- TODO: blocks about what I do -->
+	<!-- TODO: WDC BLOCK -->
+</Layout>
+
+<style>
+	.home-header{
+		background-color: var(--color-primary);
+		padding: var(--space-xl-2xl) 0;
+	}
+
+		.home-header .container{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		}
+
+		.home-header__troy{
+			margin: auto;
+		}
+
+		.home-header__text{
+			margin: auto 0;
+		}
+
+			.home-header__text a{
+				color: var(--black);
+				font-weight: 600;
+			}
+
+	.home-what-i-do{
+		padding: var(--space-xl-2xl) 0;
+	}
+
+		.home-what-i-do .container{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		}
+
+		.home-what-i-do__clients{
+			display: grid;
+			list-style: none;
+			grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+			gap: var(--space-xl);
+			align-items: center;
+			justify-content: center;
+		}
+
+			.home-what-i-do__clients li{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.home-what-i-do__clients img{
+				display: block;
+				max-height: 100px;
+				width: auto;
+				height: auto;
+				filter: grayscale(1);
+			}
+</style>

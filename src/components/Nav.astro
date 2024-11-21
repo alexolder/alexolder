@@ -1,0 +1,88 @@
+---
+import LogoText from "./LogoText.astro";
+
+const currentPath = Astro.url.pathname;
+const navItems = [
+  { name: 'About', path: '/about', className: '' },
+  { name: 'Blog', path: '/blog', className: '' },
+  { name: 'Contact', path: '/contact', className: 'site-nav__btn' }
+];
+
+---
+<nav class="site-nav">
+  <div class="container">
+    <a href="/" class="site-nav__logo">
+      <img src="/images/logo.svg" alt="AlexOlder.com Logo - Troy" width="75" height="88" />
+      <span class="site-nav__logo-text">
+        <LogoText fill="var(--color-secondary)" />
+      </span>
+    </a>
+    <div class="site-nav__menu">
+      {navItems.map(item => (
+        <a href={item.path} class={`site-nav__link ${item.className} ${item.path === currentPath ? 'active' : ''}`}>{item.name}</a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<style>
+  .site-nav{
+    padding: var(--space-xs) 0;
+    background-color: var(--color-primary);
+    /* border-top: 10px solid var(--color-primary); */
+  }
+
+    .site-nav .container{
+      display: flex;
+      flex-direction: row;
+    }
+
+  .site-nav__logo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .site-nav__logo-text{
+    display: none;
+    margin: auto 0;
+  }
+
+    @media screen and (min-width: 64em){
+      .site-nav__logo-text{
+        display: block;
+      }
+    }
+
+  .site-nav__menu{
+    margin: auto 0 auto auto;
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xs-s);
+  }
+
+  .site-nav__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--black);
+    padding: var(--space-2xs);
+    transition: all 0.25s ease;
+  }
+
+    .site-nav__link:hover, .site-nav__link:focus{
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+  .site-nav__btn{
+    background-color: var(--color-secondary);
+    color: var(--white);
+  }
+
+    .site-nav__btn:hover, .site-nav__btn:focus{
+      text-decoration: none;
+      background-color: var(--white);
+      color: var(--color-secondary);
+    }
+</style>
